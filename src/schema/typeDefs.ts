@@ -10,9 +10,10 @@ import {
 import Task from "../models/Task";
 import { obtenerUsuarios } from "../services/apiExterna";
 
-// Tipo de tarea
+// Tipo tarea
 const TipoTarea = new GraphQLObjectType({
     name: "Tarea",
+
     fields: () => ({
         id: { type: GraphQLID },
         titulo: { type: GraphQLString },
@@ -24,6 +25,7 @@ const TipoTarea = new GraphQLObjectType({
 // Tipo usuario externo
 const TipoUsuario = new GraphQLObjectType({
     name: "Usuario",
+
     fields: () => ({
         id: { type: GraphQLID },
         name: { type: GraphQLString },
@@ -34,9 +36,11 @@ const TipoUsuario = new GraphQLObjectType({
 // Consultas
 const Consulta = new GraphQLObjectType({
     name: "Consulta",
+
     fields: {
 
         tareas: {
+
             type: new GraphQLList(TipoTarea),
 
             async resolve() {
@@ -45,6 +49,7 @@ const Consulta = new GraphQLObjectType({
         },
 
         usuarios: {
+
             type: new GraphQLList(TipoUsuario),
 
             async resolve() {
@@ -123,7 +128,9 @@ const Mutacion = new GraphQLObjectType({
 });
 
 // Exportar schema
-export default new GraphQLSchema({
+const schema = new GraphQLSchema({
     query: Consulta,
     mutation: Mutacion
 });
+
+export default schema;

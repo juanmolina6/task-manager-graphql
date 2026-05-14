@@ -9,13 +9,13 @@ import cors from "cors";
 import schema from "./schema/typeDefs";
 import resolvers from "./schema/resolvers";
 
-// Crear servidor Express
+// Crear aplicación
 const app = express();
 
 // Habilitar CORS
 app.use(cors());
 
-// Conexión MongoDB
+// Conectar MongoDB
 mongoose.connect(process.env.MONGO_URI as string)
 .then(() => console.log("MongoDB conectado"))
 .catch((err) => console.log(err));
