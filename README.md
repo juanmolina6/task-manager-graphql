@@ -82,70 +82,8 @@ http://localhost:4000
 La interfaz GraphQL estará disponible en:
 http://localhost:4000/graphql
 
-📊 Ejemplos de consultas GraphQL
-=======
-# API de Gestión de Tareas (GraphQL + MongoDB)
-
-Proyecto backend desarrollado con Node.js, Express, GraphQL, MongoDB, Docker y Axios.  
-Permite gestionar tareas mediante una API GraphQL y consumir datos externos mediante Axios.
-
----
-
-## 🚀 Tecnologías utilizadas
-
-- Node.js  
-- Express  
-- GraphQL  
-- MongoDB  
-- Docker  
-- Axios  
-- Jest  
-- Nodemon  
-
----
-
-## 📌 Funcionalidades del sistema
-
-- Crear tareas  
-- Listar todas las tareas  
-- Actualizar tareas  
-- Eliminar tareas  
-- Consumir API externa (usuarios) con Axios  
-- Pruebas automáticas con Jest  
-
----
-
-## ⚙️ Instalación del proyecto
-
-Clonar el repositorio:
-
-```bash
-git clone https://github.com/juanmolina6/task-manager-graphql.git
-
-Entrar al proyecto:
-cd task-manager-graphql
-
-Instalar dependencias:
-npm install
-
-🐳 Ejecución de MongoDB con Docker
-
-Levantar el contenedor:
-docker compose up -d
-
-▶️ Ejecutar el servidor
-npm run dev
-
-El servidor se ejecuta en:
-http://localhost:4000
-
-🌐 GraphQL
-
-Interfaz GraphQL:
-http://localhost:4000/graphql
 
 📊 Ejemplos de consultas
->>>>>>> ba327fe31444a0be07f15cfed3715ba8a19c8cb0
 🔹 Obtener tareas
 {
   tareas {
@@ -214,17 +152,5 @@ mutation {
 🧪 Pruebas del proyecto
 Ejecutar pruebas automáticas:
 npm test
-
-🧪 Pruebas
-Ejecutar tests:
-npm test
-
-
-📁 Variables de entorno
-
-Crear archivo .env:
-PORT=4000
-MONGO_URI=mongodb://localhost:27017/tasksdb
-
 
 Proyecto desarrollado como práctica académica para aprendizaje de GraphQL, MongoDB y Docker.
