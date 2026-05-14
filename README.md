@@ -117,26 +117,15 @@ mutation {
   ) {
     titulo
     descripcion
-    titulo: "Actualizada"
-    descripcion: "Tarea modificada"
-    completada: true
-  ) {
-    titulo
     completada
   }
 }
-
 🔹 Eliminar tarea
 mutation {
   eliminarTarea(
     id: "ID_AQUI"
   ) {
     id
-  }
-}
-
-🔹 Consumir API externa con Axios
-    titulo
   }
 }
 
